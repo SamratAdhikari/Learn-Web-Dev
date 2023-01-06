@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is about Loops</h1>
+    </div>
+    
+
+    <script>
+    //     let i = 0;
+    //  // for (i=value; in range(3), i+=1){}
+    //     for (i=0; i<3; i++){
+    //         console.log(i)
+
+    //     }
+
+    let friends = ["bikram", "saugat", "anish", "laure", "abishek"];
+    for (let i=0; i<friends.length; i++){
+        // console.log(friends[i]);
+
+    }
+    // friends.forEach(function sam(element){
+    //     console.log(element)
+    // })
+
+    for (element of friends){
+        console.log(element);
+    }
+
+
+    let employee = {
+        name: "samrat",
+        salary: 1,
+        channel: "CWS"
+    }
+
+    for (key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`)
+    }
+
+
+    // While Loop
+    let i = 0;
+    while(i<4){
+        console.log(`${i} out of 4`)
+        i ++;
+    }
+
+    // Do While / jassai yek choti chalxa 
+    // condition wrong bhayeni
+    let z = 32
+    do{
+        console.log(`${z} out of 50`);
+        z++
+    }while(z<50)
+
+    </script>
+</body>
+</html>

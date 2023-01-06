@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+
+
+    <script>
+        var str = "This Is a String";
+        console.log(str);
+        var pos = str.indexOf("is");
+        console.log(pos);
+        var pos_last = str.lastIndexOf("is");
+        console.log(pos_last);
+
+        // Substrings from a string
+        // var substr = str.slice(1, 6);
+        var substr = str.substr(1, 5);
+        console.log(substr);
+
+        // replace string
+        var replaced = str.replace("string", "car");
+        console.log(str);
+        console.log(replaced);
+
+        // Upper Case
+        console.log(str.toUpperCase());
+
+        // Lower Case
+        console.log(str.toLowerCase());
+
+        // Concatinate a string
+        var newString = str.concat("New String");
+        console.log(newString);
+
+        // trim func (removes whitespaces from last and end)
+        var spaceString = "        this        is a Sring  ";
+        console.log(spaceString);
+        console.log(spaceString.trim());
+
+        // extract characters from a string
+        var charact = str.charAt(5);
+        console.log(charact)
+
+    </script>
+    
+</body>
+</html>

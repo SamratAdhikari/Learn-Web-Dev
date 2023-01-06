@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore corporis laborum ea accusamus facilis tenetur itaque soluta laudantium nemo. Cum consequuntur in repellat iste porro quae, accusamus possimus molestias suscipit tempore ipsa dolore provident!</p>
+
+        <div id="content"></div>
+        
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        var string = "this";
+        var name = "samrat";
+        console.log(string);
+        console.log(name, "is a good boy");
+
+        var temperate_literal = `Hello ${name}. ${string} is a car`;
+        console.log(temperate_literal);
+
+        var len = name.length;
+        console.log("Length of name is " + String(len))
+
+        console.log(`hello world\n${name}`)
+
+        document.getElementById("content").innerHTML = "<b> Inner Html<b>"
+    </script>
+</body>
+</html>

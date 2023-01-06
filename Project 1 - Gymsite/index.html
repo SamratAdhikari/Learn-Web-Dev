@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydra Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url("img/gym.jpg");
+            color: white;
+            font-family: cursive;
+        }
+
+        .header{
+            position:sticky;
+            top: 5px;
+            background-color: rgba(22, 24, 51, 0.445);
+        }
+
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 6px;
+
+        }
+
+        .left img{
+            width:34px;
+            padding-left: 24px;
+            padding-bottom: 0px;
+            filter: invert(100%);
+
+        }
+
+        .left div{
+            text-align: center;
+            font-size: 18px; 
+            line-height: 10px;
+            color:rgb(209, 208, 208);
+            font-weight: bold;
+        }
+
+        .mid{
+            display: block;
+            width: 45%;
+            font-size:larger;
+            margin: 22px auto;
+            /* border: 2px solid green; */
+
+        }
+
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 18px;
+            /* border: 2px solid orange; */
+            display: inline-block;
+
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li{
+            display: inline-block;
+            font-size:17px;
+        }
+
+        .navbar li a{
+            color:white;
+            font-weight:bold;
+            text-decoration: none;
+            padding: 34px 23px
+        }
+
+        .navbar li a:hover{
+            color:rgb(247, 157, 172);
+            font-weight:bold ;
+        }
+
+        .navbar li a.active{
+            color:grey;
+            text-decoration: underline;
+        }
+
+        .btn{
+            margin: 0px 9px;
+            color: white;
+            background-color: rgb(37, 36, 36);
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover{
+            background-color: rgb(0, 0, 0);
+        }
+
+        .container{
+            border: 2px solid white;
+            margin: 140px 20px;
+            padding: 58px 58px;
+            width:33%;
+            border-radius: 10px;
+        }
+
+        .formgroup input{
+            font-weight: bold;
+            font-family: cursive;
+            text-align: center;
+            display: block;
+            width:300px;
+            padding:8px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 3px auto;
+        }
+
+        .container button{
+            display: block;
+            width: 23%;
+            margin: 12px auto;
+        }
+
+        .container h2{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- for logo -->
+            <img src="img/icon.png" alt="">
+            <div>Hydra Gym</div>
+
+        </div>
+        <div class="mid">
+            <!-- for nav bar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >Fitness Calculator</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <!-- for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Join the best Gym in Pokhara now !</h2>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your Locality">
+            </div>
+
+            <button class="btn">
+                Submit
+            </button>
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model, Margin, Padding</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: steelblue;
+      }
+      #first {
+        background-color: pink;
+        border: 5px solid orange;
+        border-radius: 16px;
+        color: rgb(3, 0, 172);
+        padding: 15px;
+        margin: 10px 19px;
+        width: 533px;
+      }
+      #second {
+        background-color: pink;
+        border: 5px solid purple;
+        border-radius: 23px;
+        color: green;
+        /* padding-top:5px;
+            padding-left:150px; */
+
+        /* padding: top right bottom left */
+        /* margin: top right bottom left */
+
+        /* padding: 0px 0px 0px 140px; */
+        /* margin: 0px 0px 0px 140px; */
+
+        /* padding: y(top/bottom) x(left/right); */
+        /* margin: y(top/bottom) x(left/right); */
+        padding: 40px 54px;
+        margin: 100px auto;
+        width: 533px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>This is a Heading</h3>
+    <p id="first">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      temporibus?
+    </p>
+    <p id="second">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quam!
+    </p>
+  </body>
+</html>

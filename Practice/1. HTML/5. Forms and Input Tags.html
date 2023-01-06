@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h2>Forms</h2>
+    <h4>Please fill your data below</h4>
+    <!-- backend.js ma form ko data save hunxa-->
+    <form action="backend.js">
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role:</label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="salary">Salary:</label>
+            <input type="number" name="mySalary">
+        </div>
+        <br>
+        <div>
+            <label for="age">Are you 18+ ?</label>
+            <input type="checkbox" name="myAge" id="age">
+        </div>
+        <br>
+        <div>
+            Gender: 
+            <label for="male">Male</label>
+            <input type="radio" name="myGender" id="male">
+            <label for="female">Female</label> 
+            <input type="radio" name="myGender" id="female">
+        </div>
+        <br>
+            <div>
+                <label for="car">Car</label>
+                <select name="myCar" id="car">
+                    <option value="lam" selected>Lamborghini</option>
+                    <option value="aud">Audi</option>
+                    <option value="mer">Mercedes</option>
+                    <option value="bmw">BMW</option>
+                    <option value="tes">Tesla</option>
+                </select>
+            </div>
+        <br>
+        <div>
+            <label for="write">Write about yourself:</label>
+            <br><textarea name="myText" id="write" cols="50" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        
+        
+    </form> 
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with CSS Grid</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        body {
+            background-color: blue;
+        }
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width:800px) {
+        body {
+            background-color: yellow;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 800px) {
+        body {
+            background-color: green;
+        }
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, illum optio asperiores rem laudantium aliquid, debitis ad expedita minima aspernatur quae eaque non itaque nam sapiente, velit autem quaerat neque? Beatae quia numquam quis iste possimus eum assumenda consequuntur sapiente, earum perspiciatis tempora dolorum voluptatum, explicabo impedit perferendis provident. Ipsum iste laudantium perferendis cupiditate placeat esse magnam, veritatis sunt voluptates saepe repellat amet distinctio dolorem atque hic, magni illum deserunt nemo. Commodi facilis ipsa cupiditate dolorem rerum eveniet ipsum nam, corporis ut illum sapiente perspiciatis debitis hic sint nostrum consequuntur doloremque, aliquam laborum iusto excepturi natus? Accusantium rerum ipsam necessitatibus?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright &copy
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+    
+}
+
+/* Navigation Bar  */
+#navbar{
+    z-index: 100;
+    top:0px;
+    height: 90px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.7;
+
+
+}
+
+/* navbar image and logo*/
+#logo {
+    margin: 5px 5px;
+
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/* navbar list styling */
+
+#navbar ul{
+    display:flex;
+}
+
+#navbar ul li{
+    color:white;
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    font-family:sans-serif ;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    text-shadow: 4px 4px 5px black;
+
+}
+
+#home::before{
+        content: "";
+        position: absolute;
+        background: url("../bg1.jpg") no-repeat center center/cover;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.89; 
+        height: 100%;
+        width: 100%;
+    }
+#home h1{
+color: white;
+text-align:center;
+/* font-size: 1.5rem; */   
+}
+
+#home p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 8px 8px 10px black;
+            
+}
+
+
+/* Services */
+#services{
+    margin: 50px;
+    display: flex;
+
+}
+.services-container{
+    border: 2p solid brown;
+    height: 100px;
+    width: 100px;
+
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 30px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+
+.box p{
+    font-size: 1.2rem;
+}
+
+.box{
+    box-shadow: 3px px 5px brown;;
+}
+
+
+
+/* Client Section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+    z-index: -1;
+}
+
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bg.jpg");
+    width: 100%;
+    height: 102%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.client-item{
+    padding: 45px;
+}
+
+
+
+
+/* Contact Section */
+#contact{
+    position:relative;
+    margin: 7px 0px;
+    top: 0px;
+    bottom: 0px;
+
+}
+
+#contact::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    padding-bottom: 10px;
+    background: url("../contact.jpg") no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 5px 20px;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input, #contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    font-family: Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+/* Utility Class */
+.h-primary{
+    /* font-family: 'Bree Serif', serif; */
+    font-size: 3.8rem;
+    padding: 12px;
+    text-shadow: 3px 3px 3px grey;
+}
+
+#home .h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.h-secondary{
+    /* font-family: 'Bree Serif', serif; */
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align:center;
+}
+
+
+.btn{
+    padding: 6px 10px;
+    border: 2px solid rgb(233, 144, 144);
+    background-color: rgba(44, 43, 43, 0.8);
+    margin: 17px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    box-shadow: 3px 3px 5px black;
+    background-color: rgb(44, 43, 43);
+    /* background-color: rgba(44, 43, 43, 0.534); */
+}
+
+
+
+#contact .btn{
+    display: block;
+    width: 10%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+

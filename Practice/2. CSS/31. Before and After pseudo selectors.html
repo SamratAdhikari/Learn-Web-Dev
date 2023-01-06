@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After | Pseudo Selectors</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        font-family: cursive;
+    }
+
+    header::before{
+        background: url("img18.jpg");
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+    }
+
+    section {
+        height: 350px;
+        border: 2px solid red;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 3px 28px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation li {
+        list-style: none;
+    }
+
+    .navigation li a {
+        color: pink;
+        padding: 34px;
+        padding-bottom: 0px;
+        text-decoration: none;
+    }
+
+    .navigation li a:hover {
+        color: black;
+    }
+
+    .navigation {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    section::before {
+        color: white;
+        content: "This is a content";
+    }
+
+    section p {
+        /* border: 1px solid green; */
+        font-size: 17px;
+        text-align: center;
+    }
+
+    section h3 {
+        color: wheat;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact Us</a> </li>
+                <li class="item"><a href="#">About Us</a> </li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to Coding World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quos sit maxime, molestiae laborum sint eius
+            facere et hic dolore, atque quibusdam at voluptas exercitationem a sed mollitia delectus! Unde repudiandae
+            itaque qui debitis.</p>
+    </section>
+
+</body>
+
+</html>

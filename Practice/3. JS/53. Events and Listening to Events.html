@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Event Listening</title>
+    <style>
+        .btn{
+            padding: 12px;
+            margin: 50px, 50px;
+            color: red;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae totam ratione doloremque facilis mollitia quibusdam, praesentium officiis quo dolore impedit, nihil, maxime fuga aliquam. Accusamus quisquam laborum animi doloribus illum reiciendis consectetur sint quidem.</p>
+
+
+    </div>
+    <button id="show" class="btn" onclick="show()">Show Paragraph
+    </button>
+    <button id="hide" class="btn" onclick="hide()">Hide Paragraph</button>
+        
+    <script>
+        // Browser Events
+        /*
+        click
+        contextmenu
+        mouseover/ mouseout
+        mousedown/ mouseup
+
+        */
+
+        function hide(){
+            // let btn = document.getElementById("hide");
+            let para = document.getElementById("para");
+            para.style.display = "none";
+            
+        }
+        
+        function show(){
+            // let btn = document.getElementById("show");
+            let para = document.getElementById("para");
+            para.style.display = "block";
+        }
+        
+    </script>
+    
+</body>
+</html>

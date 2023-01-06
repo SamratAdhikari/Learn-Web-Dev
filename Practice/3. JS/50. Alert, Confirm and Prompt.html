@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Confirm and Prompt</title>
+</head>
+<body>
+    <div class="container">
+        HEllO WORLD
+    </div>
+    
+
+
+    <script>
+        // Alert / Doesnt return anything
+        alert("This is a Alert")
+
+        // Prompt
+        let name = prompt("What is your name?", "Guest")
+        console.log(name)
+        alert(`Welcome ${name}!!!`)
+
+        // Confirm
+        let delete_post = confirm("Delete this Post?");
+        console.log(delete_post)
+        if (delete_post){
+            alert("Post Deleted!")
+        }
+        
+        else{
+            alert("Post Not Deleted!")
+
+        }
+    </script>
+</body>
+</html>

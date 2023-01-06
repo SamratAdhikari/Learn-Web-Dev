@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transistions</title>
+</head>
+<style>
+    #box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        transition-property: all;
+        transition-duration: 1s;
+        /* transition-timing-function: ease-out; */
+        /* transition-delay: 0.5s; */
+
+        /* shortcut */
+        /* transition: background-color 1s ease-in 3s; */
+    }
+
+    #box:hover{
+        background-color: pink;
+        color: black;
+        height: 400px;
+        width: 400px;
+        opacity: 100%;
+        border-radius: 100px;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+</style>
+<body>
+    <h3>This is CSS Transistions</h3>
+    <div class="container">
+        <div id="box">This is my box</div>
+    </div>
+    
+</body>
+</html>

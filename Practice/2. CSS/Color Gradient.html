@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Gradient</title>
+    <style>
+      .container {
+        height: 344px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        margin: 10px;
+        padding: 3px;
+        color: white;
+      }
+
+      #linear {
+        background: linear-gradient(
+          215deg,
+          rgb(4, 24, 80),
+          rgb(170, 48, 48),
+          rgb(170, 48, 48, 0)
+        );
+      }
+
+      #radio {
+        background: radial-gradient(circle, red 20%, blue 40%, green 60%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="linear">Linear</div>
+      <div class="item" id="radio">Radio</div>
+    </div>
+  </body>
+</html>

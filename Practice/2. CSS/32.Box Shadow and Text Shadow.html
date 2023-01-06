@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and TExt Shadow</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        background-color: burlywood;
+        box-shadow: -8px -8px green;
+
+        /* box-shadow: width height blur-radius spread-radius color; */
+        /* bahira shadow */
+        box-shadow: 5px 5px 1px 20px rgba(39, 138, 145, 0.452);
+        /* bhitra shadow */
+        box-shadow: inset 5px 5px 1px 20px rgba(39, 138, 145, 0.452);
+
+        /* multiple shadows */
+        box-shadow: 5px 5px red, 15px 15px green;
+    }
+
+    .card h1{
+        text-shadow: 4px 2px 5px grey;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>Card 1</h1>
+            <h4>This is Html</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem quasi maxime tenetur at ratione repellendus omnis totam quas, voluptas accusantium, nesciunt sint eos magnam ad. Asperiores, accusamus! Sunt ipsum neque deleniti est impedit.</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>Card 2</h1>
+            <h4>This is CSS</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem quasi maxime tenetur at ratione repellendus omnis totam quas, voluptas accusantium, nesciunt sint eos magnam ad. Asperiores, accusamus! Sunt ipsum neque deleniti est impedit.</p>
+         </div>
+        <div class="card" id="card3">
+            <h1>Card 3</h1>
+            <h4>This is JavaScript</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem quasi maxime tenetur at ratione repellendus omnis totam quas, voluptas accusantium, nesciunt sint eos magnam ad. Asperiores, accusamus! Sunt ipsum neque deleniti est impedit.</p>
+        </div>
+    </div>    
+</body>
+</html>

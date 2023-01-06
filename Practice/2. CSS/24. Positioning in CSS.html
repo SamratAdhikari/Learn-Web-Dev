@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        .container{
+            border: 2px solid green;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid purple;
+            width:150px;
+            height:150px;
+            margin:2px;
+        }
+        /* positioning */
+            /* CSS position: static(def), absolute, relative, fixed, sticky */
+
+        #box2{
+            /* absolute: relative to its first parent(container) */
+            position: absolute;
+            bottom:12px;
+            left: 12px;
+
+        }
+        /* #box3{
+            relative: relative to normal position and will leave a gap at its normal position
+            position:relative;
+            top: 34px;
+            left: 24px;
+        }  */
+
+        #box3{
+            /* fixed: position relative to the browser window */
+            position: fixed;
+            bottom:40px;
+            right:40px;
+        }
+
+        /* #box3{
+            position: sticky;
+            top:5px;
+        } */
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h4>Position Absolute</h4>
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with me!</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>
